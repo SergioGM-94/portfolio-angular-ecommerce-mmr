@@ -30,6 +30,9 @@ import { AuthService } from './services/auth.service';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ListComponent } from './pages/admin/adminProduct/list/list.component';
+import { CreateComponent } from './pages/admin/adminProduct/create/create.component';
+import { EditComponent } from './pages/admin/adminProduct/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
     LoginComponent,
     RegisterComponent,
     AboutUsComponent,
+    ListComponent,
+    CreateComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

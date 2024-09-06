@@ -1,0 +1,56 @@
+<div class="container mt-3">
+  <h1 class="text-center">Listado de Productos</h1>
+  <div class="row row-cols-lg-auto g-3 align-items-center filter-container">
+    <div>
+      <label for="categoryFilter" class="filter-lbl"
+        >Filtro por categoría:</label>
+      <select name="categoryFilter"
+        id="categoryFilter"
+        [(ngModel)]="categoryFilter">
+        <option value="0">Seleccione una categoría</option>
+        <option *ngFor="let category of categories"
+          [value]="category.idcategory">
+          {{ category.nombre }}
+        </option>
+      </select>
+    </div>
+
+    <div>
+      <button class="btn btn-outline-danger" (click)="filterByCategory()">
+        Filtrar <i class="fa-solid fa-filter"></i>
+      </button>
+    </div>
+  </div>
+  <br />
+  <button class="btn btn-outline-primary btn-lg" routerLink="/productCreate">
+    Crear Producto <i class="fa-solid fa-computer-mouse"></i>
+  </button>
+  <br />
+  <table class="table table-hover">
+    <thead class="table-primary">
+      <tr>
+        <th scope="col">
+          <a routerLink="/Productlist" (click)="onToggleSort()">Nombre</a>
+        </th>
+        <th scope="col">Precio</th>
+        <th scope="col">Categoría</th>
+        <th scope="col">Editar/Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.title }}</td>
+        <td>{{ product.price | currency }}</td>
+        <td>{{ product.objCategoria.nombre }}</td>
+        <td class="btn-group">
+          <button class="btn-action">
+            <i class="fa-solid fa-pen-to-square " (click)="editProduct(product.id)"></i>
+          </button>
+          <button class="btn-action">
+            <i class="fa-solid fa-trash " (click)="onDelete(product.id)"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

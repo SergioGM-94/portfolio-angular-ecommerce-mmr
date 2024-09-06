@@ -1,0 +1,36 @@
+<div class="form-container">
+  <form (ngSubmit)="onCreate()">
+    <div class="form-group">
+      <label for="title">Nombre</label>
+      <input type="text" class="form-control" id="title" name="title" placeholder="Nombre del producto" required [(ngModel)]="newProduct.title">
+    </div>
+
+    <div class="form-group">
+      <label for="price">Precio</label>
+      <input type="number" step="0.01" class="form-control" id="price" name="price" placeholder="0.0" required [(ngModel)]="newProduct.price">
+    </div>
+
+    <div class="form-group">
+      <label for="idcategory">Categoría</label>
+      <select id="idcategory" class="form-control" name="idcategory" required [(ngModel)]="newProduct.idcategory">
+        <option selected disabled value="0">Seleccione Categoría</option>
+        <option *ngFor="let category of categories" [value]="category.idcategory">{{category.nombre}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Descripción</label>
+      <textarea name="description" id="description" class="form-control" placeholder="Ingrese descripción" required [(ngModel)]="newProduct.description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="image">Imagen</label>
+      <input type="text" class="form-control" id="image" name="image" placeholder="Ingrese Url" required [(ngModel)]="newProduct.image">
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Registrar</button>
+      <button type="button" class="btn btn-secondary" routerLink="/productList">Regresar</button>
+    </div>
+  </form>
+</div>
