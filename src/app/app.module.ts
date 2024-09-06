@@ -29,6 +29,7 @@ import { FooterComponent } from './pages/home/index/footer/footer.component';
 import { AuthService } from './services/auth.service';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { RegisterComponent } from './pages/register/register.component';
     FooterComponent,
     LoginComponent,
     RegisterComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
