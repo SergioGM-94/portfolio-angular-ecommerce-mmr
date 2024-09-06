@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/user';
 
-const STORE_BASE_URL = 'http://vps-4373014-x.dattaweb.com:8080';
+const STORE_BASE_URL = 'https://portfolio-ecommerce-mmr.onrender.com';
 
 @Injectable({
   providedIn: 'root'

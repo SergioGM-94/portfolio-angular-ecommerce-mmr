@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Product } from '../models/product';
 import { Category } from '../models/category';
 
-const STORE_BASE_URL = 'http://vps-4373014-x.dattaweb.com:8080';
+const STORE_BASE_URL = 'https://portfolio-ecommerce-mmr.onrender.com';
 
 @Injectable({
   providedIn: 'root'
