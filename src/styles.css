@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-black: black;
+  --text-gray: #686D76;
+  --text-white: white;
+  --text-yellow: #FFD700;
+  --text-light-blue: #40A2D8;
+  --background-menu-purple: #8000FF;
+  --background-silver: #C0C0C0;
+  --background-dark-gray: #A9A9A9;
+  --background-light-gray: #D3D3D3;
+  --background-gold: #FFD700;
+  --background-cream: #F0EDCF;
+  --background-bone: #EEEEEE;
+  --background-light-blue: #DCF2F1;
+  --background-footer-light-blue: #0080FF;
+  --background-orange: #FFE8C8;
+  --background-white: white;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*Base reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*box-sizing and font sizing*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    /* Set font size for easy rem calculations
+    * default document font size = 16px, 1rem = 16px, 100% = 16px
+    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+  h1, h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+/*Base styling*/
+body {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+a {
+text-decoration: none;
+}
+
+ul {
+    list-style: none;
+  }
+
+

@@ -1,0 +1,35 @@
+/*Sección footer*/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+  height: 20vh;
+  background: var(--background-footer-light-blue);
+}
+
+.footer-column h5{
+  font-size: 1.7rem;
+  margin-bottom: 1.3rem;
+  color: var(--text-white)
+}
+
+.footer-column li {
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+  color: var(--text-white);
+}
+
+.footer-icon {
+  width: 2.5rem;
+}
+
+.social-link {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+a{
+  color: var(--text-white);
+}

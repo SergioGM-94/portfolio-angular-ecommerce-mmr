@@ -1,0 +1,43 @@
+<div id="nav-bar">
+  <mat-toolbar class="first-nav">
+   <div class="nav-div-left">
+       <a routerLink="/index"><img class="logo-img" src="https://i.imgur.com/gIG2Pbu.png"></a>
+       <ul class="nav-list-left">
+           <li *ngIf="userType != 'ADMIN'"><button class="nav-link-left" routerLink="/aboutus"><mat-icon class="menu-icon">apartment</mat-icon><span>Nosotros</span></button></li>
+           <li *ngIf="userType === 'ADMIN'"><button class="nav-link-left" routerLink="/productList"><mat-icon class="menu-icon">inventory_2</mat-icon><span>Productos</span></button></li>
+           <li *ngIf="userType === 'ADMIN'"><button class="nav-link-left" routerLink="/userList"><mat-icon class="menu-icon">person</mat-icon><span>Usuarios</span></button></li>
+       </ul>
+   </div>
+   <div class="nav-div-right">
+       <ul class="nav-list-right">
+           <li *ngIf="userType === 'USER'"><button [matMenuTriggerFor]="menu" class="nav-link-right"><mat-icon class="menu-icon" [matBadge]="itemsQuantity" [matBadgeHidden]="!itemsQuantity" matBadgeColor="warn">shopping_cart</mat-icon><span>Carrito</span></button></li>
+           <li *ngIf="!userType"><button class="nav-link-right" routerLink="/login"><mat-icon class="menu-icon">login</mat-icon><span>Log in</span></button></li>
+           <li *ngIf="userType"><button class="nav-link-right" (click)="logout()"><mat-icon class="menu-icon">logout</mat-icon><span>Log out</span></button></li>
+           <mat-menu #menu="matMenu">
+               <div class="p-3 divide-y d-flex flex-column cart-menu-container">
+                   <div class="d-flex justify-content-between cart-menu-header">
+                       <span class="mr-5">{{itemsQuantity}} items</span>
+                       <a routerLink="cart">Ver carrito</a>
+                   </div>
+                   <div *ngIf="cart.items.length" class="cart-menu-item-list">
+                       <div *ngFor="let item of cart.items" class="d-flex justify-content-between fw-light cart-menu-item">
+                           {{item.name}} x {{item.quantity}} <span class="fw-bold">{{item.price| currency}}</span>
+                       </div>
+                   </div>
+                   <div class="d-flex justify-content-between fw-light cart-menu-sum cart-menu-footer">
+                       Total: <span class="fw-bold">{{getTotal(cart.items) | currency}}</span>
+                   </div>
+                   <div class="pt-3 d-flex justify-content-around">
+                       <button class="cart-menu-delete-button" (click)="onClearCart()">
+                           <mat-icon class="cart-icon">remove_shopping_cart</mat-icon>
+                       </button>
+                       <button routerLink="cart" class="cart-menu-checkout-button">
+                           <mat-icon class="cart-icon">shopping_cart</mat-icon>
+                       </button>
+                   </div>
+               </div>
+           </mat-menu>
+       </ul>
+   </div>
+</mat-toolbar>
+</div>
