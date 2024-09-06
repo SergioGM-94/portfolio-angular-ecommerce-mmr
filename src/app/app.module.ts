@@ -27,6 +27,8 @@ import { HeaderComponent } from './pages/home/components/header/header.component
 import { IndexComponent } from './pages/home/index/index.component';
 import { FooterComponent } from './pages/home/index/footer/footer.component';
 import { AuthService } from './services/auth.service';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { AuthService } from './services/auth.service';
     HeaderComponent,
     IndexComponent,
     FooterComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

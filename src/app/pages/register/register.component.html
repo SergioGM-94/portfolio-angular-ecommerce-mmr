@@ -1,0 +1,46 @@
+<div class="body">
+  <div class="cuadro">
+    <div class="bienvenido">
+      <img src="https://i.imgur.com/gIG2Pbu.png" class="marca" />
+      <h2 id="title">Bienvenido (a)</h2>
+      <a routerLink="/login"><button id="login">Iniciar sesión</button></a>
+    </div>
+
+    <div class="registro">
+      <h2 class="cuenta">Crear una cuenta</h2>
+      <h3 class="titu">Coloca tus datos para registrarte</h3>
+      <form (ngSubmit)="onRegister()">
+        <input
+          type="text"
+          id="userreg"
+          name="user"
+          placeholder="Nombre de usuario"
+          class="dato"
+          required
+          [(ngModel)]="newUser.user"
+        />
+        <br />
+        <input
+          type="email"
+          id="emailreg"
+          name="email"
+          placeholder="Correo electrónico"
+          class="dato"
+          required
+          [(ngModel)]="newUser.email"
+        />
+        <br />
+        <input
+          type="password"
+          id="passwordreg"
+          name="password"
+          placeholder="Contraseña"
+          class="dato"
+          required
+          [(ngModel)]="newUser.password"
+        />
+        <button id="register" type="submit">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</div>
