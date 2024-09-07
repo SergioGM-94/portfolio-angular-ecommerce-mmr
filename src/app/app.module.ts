@@ -33,6 +33,9 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ListComponent } from './pages/admin/adminProduct/list/list.component';
 import { CreateComponent } from './pages/admin/adminProduct/create/create.component';
 import { EditComponent } from './pages/admin/adminProduct/edit/edit.component';
+import { ListUserComponent } from './pages/admin/adminUser/list-user/list-user.component';
+import { CreateUserComponent } from './pages/admin/adminUser/create-user/create-user.component';
+import { EditUserComponent } from './pages/admin/adminUser/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { EditComponent } from './pages/admin/adminProduct/edit/edit.component';
     AboutUsComponent,
     ListComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    ListUserComponent,
+    CreateUserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

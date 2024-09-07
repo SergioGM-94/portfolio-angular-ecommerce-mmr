@@ -7,6 +7,9 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ListComponent } from './pages/admin/adminProduct/list/list.component';
 import { CreateComponent } from './pages/admin/adminProduct/create/create.component';
 import { EditComponent } from './pages/admin/adminProduct/edit/edit.component';
+import { ListUserComponent } from './pages/admin/adminUser/list-user/list-user.component';
+import { CreateUserComponent } from './pages/admin/adminUser/create-user/create-user.component';
+import { EditUserComponent } from './pages/admin/adminUser/edit-user/edit-user.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'index', pathMatch: 'full'},
@@ -17,6 +20,9 @@ const routes: Routes = [
   {path: 'productList', component: ListComponent},
   {path: 'productCreate', component: CreateComponent},
   {path: 'productEdit/:id', component: EditComponent},
+  {path: 'userList', component: ListUserComponent},
+  {path: 'userCreate', component: CreateUserComponent},
+  {path: 'userEdit/:id', component: EditUserComponent},
 ];
 
 @NgModule({

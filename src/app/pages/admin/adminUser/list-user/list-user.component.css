@@ -1,0 +1,41 @@
+.filter-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-lbl {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+select {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
+.table {
+  margin-top: 30px;
+}
+
+.btn-action {
+  background-color: #8332E5; /* Ajusta según el color de tu menú de fondo */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
