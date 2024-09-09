@@ -1,0 +1,25 @@
+.drawer-container{
+  min-height: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.mat-drawer{
+  top: 2rem;
+  width: 250px;
+}
+
+.drawer-content-container{
+  border-radius: 5px;
+}
+
+.mat-paginator{
+  display: flex;
+  justify-content: center;
+}
+
+.mat-mdc-paginator{
+  font-size: 1.5rem;
+}

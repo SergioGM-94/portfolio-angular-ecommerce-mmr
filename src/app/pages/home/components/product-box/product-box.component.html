@@ -1,0 +1,20 @@
+<mat-card [ngClass]="{'text-start': !fullWidthMode}">
+  <div [ngClass]="{flex: fullWidthMode, 'card': !fullWidthMode, 'card mb-3': !fullWidthMode}" class="">
+      <div [ngClass]="{'row g-0': fullWidthMode, '': !fullWidthMode}">
+          <div [ngClass]="{'col-md-4': fullWidthMode, '':!fullWidthMode}" class="img-container">
+              <img [ngClass]="{'img-no-full-width card-img-top': !fullWidthMode, 'img-full-width img-fluid rounded-start': fullWidthMode}" [src]="product?.image" alt="">
+          </div>
+          <div [ngClass]="{'col-md-8 card-info-container': fullWidthMode, '':!fullWidthMode}">
+              <div class="card-body">
+                  <h5 [ngClass]="{'card-title-big': fullWidthMode}" class="card-title">{{product?.title}}</h5>
+                  <h6 [ngClass]="{'text-body-secondary-big': fullWidthMode}" class="card-subtitle mb-2 text-body-secondary">{{product?.objCategoria?.nombre}}</h6>
+                  <p *ngIf="fullWidthMode" class="card-text card-text-big">{{product?.description}}</p>
+              </div>
+              <div class="card-footer">
+                  <span>{{product?.price| currency}}</span>
+                  <button (click)="onAddToCart()"><mat-icon class="cart-icon">shopping_cart</mat-icon></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</mat-card>

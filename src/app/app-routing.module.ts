@@ -10,10 +10,14 @@ import { EditComponent } from './pages/admin/adminProduct/edit/edit.component';
 import { ListUserComponent } from './pages/admin/adminUser/list-user/list-user.component';
 import { CreateUserComponent } from './pages/admin/adminUser/create-user/create-user.component';
 import { EditUserComponent } from './pages/admin/adminUser/edit-user/edit-user.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'index', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'index', component: IndexComponent},
+  {path: 'cart', component: CartComponent},
   {path: 'aboutus', component: AboutUsComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},

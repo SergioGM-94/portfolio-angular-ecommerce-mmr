@@ -1,0 +1,57 @@
+.card-title{
+  min-height: 86.38px;
+}
+
+.card-info-container{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding: 1.5rem;
+}
+
+.card-title-big{
+  font-size: 3rem;
+  line-height: 3.03rem;
+}
+
+.text-body-secondary-big{
+  font-size: 2rem;
+}
+
+.card-text-big{
+  font-size: 2rem;
+  line-height: 2.1rem;
+}
+
+.card-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+.card-footer span{
+ color: blue;
+}
+
+.card-footer button{
+  color: #A9A9A9;
+  background-color: transparent;
+  border: none;
+}
+
+.cart-icon{
+  color: #D2B0D0;
+}
+
+.img-full-width{
+  height: 360px;
+}
+
+.img-no-full-width{
+  height: 200px;
+}
+
+.img-container{
+  padding: 1rem;
+}

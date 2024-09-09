@@ -1,0 +1,30 @@
+.expansion-panel{
+  background-color: #A9A9A9;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.expansion-panel:hover{
+  background-color: #A9A9A9;
+}
+
+.expansion-panel-header{
+  color: white;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.list-option{
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+
+}
+
+.mdc-list-item__primary-text{
+  color: white;
+}
+

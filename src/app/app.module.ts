@@ -36,6 +36,12 @@ import { EditComponent } from './pages/admin/adminProduct/edit/edit.component';
 import { ListUserComponent } from './pages/admin/adminUser/list-user/list-user.component';
 import { CreateUserComponent } from './pages/admin/adminUser/create-user/create-user.component';
 import { EditUserComponent } from './pages/admin/adminUser/edit-user/edit-user.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FilterComponent } from './pages/home/components/filter/filter.component';
+import { PComponent } from './p/p.component';
+import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
+import { ProductsHeaderComponent } from './pages/home/components/products-header/products-header.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +57,13 @@ import { EditUserComponent } from './pages/admin/adminUser/edit-user/edit-user.c
     EditComponent,
     ListUserComponent,
     CreateUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    HomeComponent,
+    FilterComponent,
+    PComponent,
+    ProductBoxComponent,
+    ProductsHeaderComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

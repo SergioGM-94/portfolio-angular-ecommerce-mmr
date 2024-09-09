@@ -1,0 +1,11 @@
+<mat-expansion-panel class="expansion-panel">
+  <mat-expansion-panel-header class="expansion-panel-header">Categorías</mat-expansion-panel-header>
+  <mat-selection-list [multiple]="false">
+      <mat-list-option *ngFor="let category of categories" [value]="category.idcategory" class="list-option"  (click)="onShowCategory(category.idcategory)">
+          {{category.nombre}}
+      </mat-list-option>
+      <mat-list-option value="" class="list-option mdc-list-item__primary-text"  (click)="onShowCategory(0)">
+          Todas
+      </mat-list-option>
+  </mat-selection-list>
+</mat-expansion-panel>
