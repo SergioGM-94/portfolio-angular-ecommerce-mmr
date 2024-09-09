@@ -1,41 +1,61 @@
-.filter-container {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-container {
+  background-color: #CCCCCC;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
 }
 
-.filter-lbl {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-right: 10px;
+.form-group {
+  margin-bottom: 15px;
 }
 
-select {
-  font-size: 1rem;
-  padding: 5px;
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
   border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+textarea.form-control {
+  resize: none;
+  height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: #8332E5;
+  border: none;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  color: white;
 }
 
 .btn {
-  font-size: 1.5rem;
-}
-
-.table {
-  margin-top: 30px;
-}
-
-.btn-action {
-  background-color: #8332E5; /* Ajusta según el color de tu menú de fondo */
-  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  color: white;
-  padding: 8px;
-  font-size: 1.5rem;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.btn-group {
-  display: flex;
-  gap: 10px;
+.btn:hover {
+  opacity: 0.9;
 }

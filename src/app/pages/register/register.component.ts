@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
   newUser: User = {
-    idLogin: 1,
+    idLogin: 0,
     user: '',
     email: '',
     password: '',
@@ -30,11 +30,11 @@ export class RegisterComponent {
 
         this.authService.registerDB(newUser)
           .subscribe(response => {
-            console.log('Usuario registrado con éxito:', response);
+            alert('Usuario registrado con éxito');
             this.router.navigate(['/login']);
           },
           error => {
-            console.error('Error al registrar el usuario en la base de datos:', error);
+            alert('Error al registrar el usuario en la base de datos');
           });
 
   }

@@ -24,7 +24,7 @@ export class EditUserComponent implements OnInit{
   }
 
   getUser() {
-    const id = this.route.snapshot.params['idLogin'];
+    const id = this.route.snapshot.params['id'];
     this.userService.getUser(id).subscribe(
       response => {this.user = response}
     );
