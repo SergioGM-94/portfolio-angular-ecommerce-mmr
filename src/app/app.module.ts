@@ -38,7 +38,6 @@ import { CreateUserComponent } from './pages/admin/adminUser/create-user/create-
 import { EditUserComponent } from './pages/admin/adminUser/edit-user/edit-user.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FilterComponent } from './pages/home/components/filter/filter.component';
-import { PComponent } from './p/p.component';
 import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
 import { ProductsHeaderComponent } from './pages/home/components/products-header/products-header.component';
 import { CartComponent } from './pages/cart/cart.component';
@@ -60,7 +59,6 @@ import { CartComponent } from './pages/cart/cart.component';
     EditUserComponent,
     HomeComponent,
     FilterComponent,
-    PComponent,
     ProductBoxComponent,
     ProductsHeaderComponent,
     CartComponent
