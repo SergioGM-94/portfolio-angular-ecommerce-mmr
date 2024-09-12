@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Test access credentials
+
+Use the following credentials to simulate a user experience:
+  user: admin@mmr.com
+  pass: 123456
+
+Use the following credentials to simulate an admin experience:
+  user: user1@email.com
+  pass: 123456
