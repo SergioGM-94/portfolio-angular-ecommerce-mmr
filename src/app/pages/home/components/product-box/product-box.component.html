@@ -7,7 +7,7 @@
           <div [ngClass]="{'col-md-8 card-info-container': fullWidthMode, '':!fullWidthMode}">
               <div class="card-body">
                   <h5 [ngClass]="{'card-title-big': fullWidthMode}" class="card-title">{{product?.title}}</h5>
-                  <h6 [ngClass]="{'text-body-secondary-big': fullWidthMode}" class="card-subtitle mb-2 text-body-secondary">{{product?.objCategoria?.nombre}}</h6>
+                  <h6 [ngClass]="{'text-body-secondary-big': fullWidthMode}" class="card-subtitle mb-2 text-body-secondary">{{product?.categoryObj?.name}}</h6>
                   <p *ngIf="fullWidthMode" class="card-text card-text-big">{{product?.description}}</p>
               </div>
               <div class="card-footer">

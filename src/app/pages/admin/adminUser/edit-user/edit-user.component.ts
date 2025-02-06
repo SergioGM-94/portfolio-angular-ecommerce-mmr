@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class EditUserComponent implements OnInit{
   user : User = {
-    idLogin: 0,
+    loginId: 0,
     user: '',
     email: '',
     password: '',
@@ -32,7 +32,7 @@ export class EditUserComponent implements OnInit{
 
   onEdit() {
     console.log(this.user)
-    this.userService.updateUser(this.user.idLogin, this.user).
+    this.userService.updateUser(this.user.loginId, this.user).
     subscribe(response => {
       console.log('Usuario actualizado con éxito:', response);
       this.router.navigate(['/userList']);

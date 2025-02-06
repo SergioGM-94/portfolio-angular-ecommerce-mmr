@@ -17,9 +17,9 @@
 
     <div class="form-group">
       <label for="idcategory">Categoría</label>
-      <select id="idcategory" class="form-control" name="idcategory" required [(ngModel)]="product.idcategory">
+      <select id="idcategory" class="form-control" name="idcategory" required [(ngModel)]="product.categoryId">
         <option selected disabled value="0">Seleccione Categoría</option>
-        <option *ngFor="let category of categories" [value]="category.idcategory">{{category.nombre}}</option>
+        <option *ngFor="let category of categories" [value]="category.categoryId">{{category.name}}</option>
       </select>
     </div>
 

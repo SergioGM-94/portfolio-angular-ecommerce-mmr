@@ -17,16 +17,16 @@
     </thead>
     <tbody>
       <tr *ngFor="let user of users">
-        <td>{{ user.idLogin }}</td>
+        <td>{{ user.loginId }}</td>
         <td>{{ user.user }}</td>
         <td>{{ user.email }}</td>
         <td>{{ user.type }}</td>
         <td class="btn-group">
           <button class="btn-action">
-            <i class="fa-solid fa-pen-to-square " (click)="editUser(user.idLogin)"></i>
+            <i class="fa-solid fa-pen-to-square " (click)="editUser(user.loginId)"></i>
           </button>
           <button class="btn-action">
-            <i class="fa-solid fa-trash " (click)="onDelete(user.idLogin)"></i>
+            <i class="fa-solid fa-trash " (click)="onDelete(user.loginId)"></i>
           </button>
         </td>
       </tr>

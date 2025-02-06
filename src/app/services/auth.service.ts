@@ -5,6 +5,7 @@ import { User } from '../models/user';
 import { Router } from '@angular/router';
 
 const STORE_BASE_URL = 'https://portfolio-ecommerce-mmr.onrender.com';
+// const STORE_BASE_URL = 'http://localhost:8080';
 
 @Injectable({
   providedIn: 'root'
@@ -29,11 +30,11 @@ export class AuthService {
   }
 
   registerDB(newUser: User): Observable<any> {
-    return this.http.post<any>(`${STORE_BASE_URL}/api/Usuario`, newUser);
+    return this.http.post<any>(`${STORE_BASE_URL}/api/user`, newUser);
   }
 
   login(user: User): Observable<any>{
-    return this.http.post<any>(`${STORE_BASE_URL}/api/Usuario/login`, user);
+    return this.http.post<any>(`${STORE_BASE_URL}/api/user/login`, user);
   }
 
   setUserType(type: string) {
