@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { User } from '../models/user';
 
 const STORE_BASE_URL = 'https://portfolio-ecommerce-mmr.onrender.com';
+// const STORE_BASE_URL = 'http://localhost:8080';
 
 @Injectable({
   providedIn: 'root'
@@ -14,23 +15,23 @@ export class UserService {
 
   listUsers(): Observable<User[]>{
     return this.httpClient.get<User[]>(
-      `${STORE_BASE_URL}/api/Usuario`
+      `${STORE_BASE_URL}/api/user`
     )
   }
 
   public createUser(user: User): Observable<any> {
-    return this.httpClient.post<any>(`${STORE_BASE_URL}/api/Usuario`, user);
+    return this.httpClient.post<any>(`${STORE_BASE_URL}/api/user`, user);
     }
 
   public getUser(id: number): Observable<User> {
-    return this.httpClient.get<User>(`${STORE_BASE_URL}/api/Usuario/${id}`);
+    return this.httpClient.get<User>(`${STORE_BASE_URL}/api/user/${id}`);
     }
 
   public updateUser(id: number, user: User): Observable<any> {
-    return this.httpClient.put(`${STORE_BASE_URL}/api/Usuario/${id}`, user);
+    return this.httpClient.put(`${STORE_BASE_URL}/api/user/${id}`, user);
     }
 
   public deleteUser(id: number): Observable<any> {
-    return this.httpClient.delete<any>(`${STORE_BASE_URL}/api/Usuario/${id}`);
+    return this.httpClient.delete<any>(`${STORE_BASE_URL}/api/user/${id}`);
     }
 }

@@ -16,7 +16,7 @@ export class EditComponent implements OnInit{
     id: 0,
     title: '',
     price: 0.0,
-    idcategory: 0,
+    categoryId: 0,
     description: '',
     image: ''
   }

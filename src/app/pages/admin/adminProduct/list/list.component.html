@@ -9,8 +9,8 @@
         [(ngModel)]="categoryFilter">
         <option value="0">Seleccione una categoría</option>
         <option *ngFor="let category of categories"
-          [value]="category.idcategory">
-          {{ category.nombre }}
+          [value]="category.categoryId">
+          {{ category.name }}
         </option>
       </select>
     </div>
@@ -41,7 +41,7 @@
       <tr *ngFor="let product of products">
         <td>{{ product.title }}</td>
         <td>{{ product.price | currency }}</td>
-        <td>{{ product.objCategoria.nombre }}</td>
+        <td>{{ product.categoryObj.name }}</td>
         <td class="btn-group">
           <button class="btn-action">
             <i class="fa-solid fa-pen-to-square " (click)="editProduct(product.id)"></i>

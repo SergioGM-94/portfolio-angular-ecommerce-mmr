@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent {
   newUser: User = {
-    idLogin: 0,
+    loginId: 0,
     user: '',
     email: '',
     password: '',
@@ -21,7 +21,7 @@ export class RegisterComponent {
 
   onRegister() {
         const newUser: User = {
-          idLogin: this.newUser.idLogin,
+          loginId: this.newUser.loginId,
           user: this.newUser.user,
           email: this.newUser.email,
           password: this.newUser.password,

@@ -4,17 +4,17 @@ export interface Product {
   id: number;
   title: string;
   price: number;
-  idcategory: number;
+  categoryId: number;
   description: string;
   image: string;
-  objCategoria: Category;
+  categoryObj: Category;
 }
 
 export interface ProductPost {
 id: number;
 title: string;
 price: number;
-idcategory: number;
+categoryId: number;
 description: string;
 image: string;
 }
